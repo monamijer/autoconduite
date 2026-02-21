@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> inscription </title>
+		<style>
+		  html{
+		    font-size: 20px;
+		  }
+		  
+		  span{
+			color: red;
+			font-size: x-large;
+		  }
+		  input{
+		    font-size: large;
+		  }
+		  
+		</style>
+	</head>
+	<body>
+		<h2> Inscrivez-vous ici </h2>
+		<form>
+			<table>
+			<tr>
+			<th> Nom <span class="required">*</span> : </th>
+			<td>
+				<input size="14" type="text" placeholder="Nom en majuscule" pattern="[A-Z] {2,6}" required/>
+			</td>
+			</tr>
+			<tr>
+			<th> Prenom : </th>
+			<td>
+				<input size="14" type="text" />
+			</td>
+			</tr>
+			<tr>
+			<th> Date de naissance: </th>
+			<td>
+				<input type="date" />
+			</td>
+			</tr>
+				<tr>
+			<th> Email: </th>
+			<td>
+				<input size="14'' type="email" />
+			</td>
+			</tr>
+				<tr>
+			<th> Passeport: </th>
+			<td>
+				<input type="file" />
+			</td>
+			</tr>
+			<tr>
+			<th> Sexe : </th>
+			<td>
+				<input type="radio" name="sex" value="M" />Masulin
+				<input type="radio" name="sex" value="F" />Feminin
+			</td>
+			</tr>
+			
+			<tr>
+			<th> langue parlees  : </th>
+			<td>
+				<input type="checkbox"  value="Kirundi" />Kirundi
+				<input type="checkbox" value="Francais" />Francais
+				<input type="checkbox"  value="Anglais" />Anglais
+				<input type="checkbox" value="Lingala" /> Lingala
+			</td>
+			</tr>
+			
+			<tr>
+			<th> Nationalite  : </th>
+			<td>
+				<select>
+				<optgroup label="Africa">Afrique
+					  <option value="Maroc">Maroc</option>
+					  <option value="RDC">RDC</option>
+					  <option value="Kenya">Kenya</option>
+					  <option value="Ethiopie">Ethiopie</option>
+				  </optgroup>
+				<optgroup label="Europe">Europe
+					  <option value="Belgique">Belgique</option>
+					  <option value="Pologne">Pologne</option>
+					  <option value="Roumanie">Roumanie</option>
+					  <option value="Finland">Finland</option>
+				</optgroup>
+				<optgroup label="America">Amerique
+					  <option value="Netherland">Netherland</option>
+					  <option value="Argentine">Argentine</option>
+					  <option value="Perou">Perou</option>
+					  <option value="Bolivie">Bolivie</option>
+				</optgroup>
+				<optgroup label="Asia">Asie
+					  <option value="Indonesie">Indonesie</option>
+					  <option value="Inde">Inde</option>
+					  <option value="Chine">Chine</option>
+					  <option value="Japon">Japon</option>
+				</optgroup>
+				</select>
+			</td>
+			</tr>
+			<tr>
+					<th>Commentaires</th>
+					<td> <textarea></textarea></td>
+			</tr>
+			<tr>
+					<td></td>
+					<td>
+							<input type="submit" value="Envoyer"/>
+							<input type="reset" value="Annuler"/>
+					</td>
+			</tr>
+			</table>
+		</form>
+	</body>
+
+</html>

@@ -1,0 +1,387 @@
+html{
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+	
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+dl, ul, ol, p{
+	font-size: large;
+	line-height: 1.5;
+}
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+
+header a {
+	
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.header-main {
+	position: sticky;
+	top: 10px;
+}
+header a:link{
+	
+}
+header a:visited{
+
+}
+header a:focus{	
+	
+}
+header a:hover{
+	
+}
+header a:active{
+	
+}
+@media(orientation: landscape){
+	body{
+		content: "hello";
+	}
+}
+@media(max-width:480px){
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	header{
+		display: flex;
+		flex-direction: column;
+	}
+	.container{
+		display: flex;
+		justify-content: space-between;
+		padding: 1em 1em;
+	}
+	.navbar{
+		display: flex;
+	}
+	.navbar .links{
+		display: none;
+	}
+	.navbar .logos{
+		display: flex;
+		gap: 1em;
+	}
+	.navbar ul {
+		list-style: none;
+	}
+	.container .menu{
+		display: inline-table;
+		width: auto;
+		padding: 1em;
+		height: 5vh;
+	}
+	.header-main{
+		background: url(car4.jpg) 100% local;
+	}
+	.logo{
+		
+		max-height: 30px;
+		max-width: 100px;
+	}
+	section div{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	section div h1{
+		display: inline;
+	}
+	section div p{
+		text-align: justify;
+		padding: 1em;
+	}
+	section div button{
+		max-width: 25%;
+		margin: auto;
+		background: rgb(23 203 78 /.8);
+		outline: 2px solid white;
+		border-radius: 25px;
+		box-shadow: 2px 2px white;
+	}
+}
+@media(max-width: 868px) and (min-width: 481px){
+	header, main .container, main .images, .rows .links, .social-links, .navbar, .links, .logos, footer, footer .rows{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	header, .container{
+		flex-direction: column;
+		overflow: hidden;
+	}
+	body{
+		padding: 0;
+		margin: 0;
+	}
+	main .images{
+		gap: 2em;
+		justify-content: center;
+	}
+	main .images img{
+		padding: 2px 1em;
+		border-radius: 1.6em;
+		object-fit: cover;
+	}
+	main{
+		justify-content: space-evenly;
+		gap: 2px;
+	}
+
+
+	.images img{
+		max-width: 30vw ;
+	}
+
+	.navbar{
+		justify-content: space-between;
+	}
+	.links, .logos{
+		gap: 2em;
+		list-style: none;
+	}
+	.logo{
+		display: block;
+		position: absolute;
+		top: 10px;
+		left: 20px;
+		width: 45px;
+		border-radius: 50%;
+		padding: 0;
+	}
+	header{
+		position: sticky;
+	}
+	header .container{
+		position: sticky;
+		z-index: 1000;
+	}
+	header ul li{
+		border: 0.02px solid black;
+		padding: 0 12px 0 0;
+		border-radius: 14px;
+		
+	}
+	.container .menu{
+		display: none;
+	}
+	.header-main{
+		display: flex;
+		flex-direction: column;
+		background: url(car3.jpg)	;
+		gap: 10em;
+		color: white;
+		padding: 2em;
+		margin: 0;
+	}
+	.header-main h1{
+		margin: auto;
+		
+	}
+	footer, section {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	section div{
+		display: flex;
+		flex-direction: column;
+	}
+	section div h1{
+		max-width: 100%;
+		margin: auto;
+	}
+	section div p{
+		display: inline;
+		padding: 0 1em ;
+	}
+	section div button{
+		display: inline-block;
+		max-width: 45vw;
+		background: rgb(34 255 23/ .5);
+		outline: transparent;
+		border-radius: 12px;
+		cursor: pointer;
+		margin: auto;
+		padding: 1em;
+		font-size: large;
+
+	}
+	footer p{
+		margin: auto;
+	}
+	footer .rows ul{
+		list-style: none;
+	}
+	footer .rows ul .h1{
+		font-size: large;
+		font-weight: bold;
+		color: rgb(20 40 200/ .9);
+		
+	}
+	.rows ul:last-child{
+		position: relative;
+		gap: 0 2em;
+		display: flex;
+		flex-direction: column;
+		padding-left: 3em;
+	}
+	.footer-btn{
+		padding: 1em;
+		margin-left: 2em;
+		border-radius: 20px;
+		outline: 2px solid blue;
+	}
+	.footer-img{
+		max-width: 25vw;
+		max-height: 10vh;
+		margin: auto;
+		padding: 0 10px;
+		border-radius: 20%;
+	}
+	footer .rows:nth-child(3){
+		display: flex;
+		justify-content: space-between;
+	}
+	.social-links a:link  {
+		margin: auto;
+	}
+
+	
+}
+	
+/* DESIGN FOR COMPUTER  */
+
+/* header, main .container, main .images .social-links .navbar,  .logos, footer, footer .rows{
+		display: flex;
+		flex-wrap: wrap;
+	} */
+@media(min-width: 869px){
+	body, header{
+		display: flex;
+		flex-flow: column wrap;
+	}
+	h1, p, li{
+	font-size: 1.5em;	
+	}
+	p{
+		width: 80%;
+	}
+	.navbar{
+		position: sticky;
+	}
+	.navbar, .navbar ul{
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	.navbar ul{
+		list-style: none;
+		
+
+	}
+	.menu{
+		display: none;
+	}
+	.links{
+		gap: 2em;
+		padding: 0 1em;
+		font-weight: bolder;
+		font-size: x-large;
+	}
+	.logos img{
+		max-width: 100px;
+		position: relative;
+		top: -10px;
+		left: -10px;
+		border: 2px solid black;
+		border-radius: 50%;
+		outline: 2px solid orange;
+		
+	}
+	.devise{
+		position: relative;
+		font-size: x-large;
+		top: 20px;
+		margin: 0 0 0 10px;
+		font-weight: bolder;
+	}
+	.header-main{
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		background: url(car3.jpg);
+		color: white;
+		justify-content: space-between;
+		height: 35vh;
+	}
+/*  the main  designing */
+	main{
+		display: flex;
+		flex-flow: column wrap;
+	}
+	.images, section{
+		display: flex;
+		flex-flow: row wrap;
+		gap: 0.5em;
+		margin: 1px 0;
+		
+	}
+	.images{
+		width: 80%;
+		margin: 10px auto;
+		align-content: space-between;
+	}
+	.images img{
+		border-radius: 2em;
+		flex: 1 0 30%;
+	}
+	section div{
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		
+	}
+	section div h1{
+		font-size: 3rem;
+	}
+	section div p{
+		line-height: 1.4;
+		margin: auto;
+		width: 80%;
+	}
+	footer{
+		display: flex;
+		align-items: center;
+		flex-flow: column wrap;
+		gap: 1em;
+
+	}
+	footer .rows{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	footer .rows ul{
+		list-style: none;
+	}
+	.footer-btn{
+		padding: 12px 2em;
+		border-radius: 20px;
+		outline: 2px solid blue;
+		font-size: x-large;
+		margin: 0 0 10px 0;
+	}
+	.footer-img{
+		width: 10vw;
+		border-radius: 50%;
+	}
+	.rows .links{
+		display: flex;
+	}
+}
