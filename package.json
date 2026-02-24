@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
 	"preview":"vite preview",
 	"build":"vite build"
   },
   "keywords": [],
-  "author": "",
+  "author": "monamijer",
   "license": "ISC",
-  "description": "",
+  "description": "this app is about drive school",
   "dependencies": {
     "vite": "^6.4.1"
   }
